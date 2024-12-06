@@ -1,0 +1,311 @@
+body{
+    background-color: rgb(87, 87, 87);
+    background-size: contain;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+#title{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#texttitle{
+    flex-direction: column;
+    line-height: 10px;
+}
+#title img{
+    height: 100%;
+    width: 5vw;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+
+}
+h1{
+    font-weight: 200;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: #febdc6;
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 600px;
+    margin-left: 10%;
+    margin-top: -5%;
+}
+a{
+    color: white;
+}
+a:hover{
+    color:#febdc6;
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid #febdc6;
+    padding: 10px;
+    border-radius: 20px;
+}
+#inscreva-se-btn:hover{
+    background-color: #febdc6;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#btnenviar{
+    height: 50px;
+    width: 50%;
+    background-color: #febdc6;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#btnenviar:hover{
+    cursor:pointer;
+}
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #febdc6; /* Rosa indicado */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #f9a1b5; /* Rosa mais intenso */
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(20, 238, 57); /* Cor vermelha para mensagens de erro */
+}
+
+#testemunho{
+text-align: justify;
+  font-size: 20px;
+  position: relative;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+/* Estilização do contêiner principal */
+#tema {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 3%;
+  }
+  
+  /* Estilização do texto principal */
+  #tema h1 {
+    font-size: 3rem; /* Tamanho da fonte em telas maiores */
+    color: #fbb; /* Cor do texto (rosa claro) */
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Estilização do subtítulo */
+  #tema p {
+    font-size: 2rem; /* Tamanho menor para o subtítulo */
+    color: #fbb; /* Mesma cor do texto principal */
+    margin: 10px 0 0; /* Espaçamento entre o título e o subtítulo */
+    text-align: center;
+    line-height: 1.1;
+  }
+  
+  /* Ajustes responsivos para telas menores */
+  @media (max-width: 768px) {
+    #tema h1 {
+      font-size: 2rem; /* Reduz o tamanho da fonte */
+    }
+    #tema p {
+      font-size: 1.2rem; /* Reduz o tamanho do subtítulo */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #tema h1 {
+      font-size: 1.5rem; /* Mais ajuste para telas pequenas */
+    }
+    #tema p {
+      font-size: 1rem; /* Ajuste adicional para subtítulo */
+    }
+  }
+  
+#fotos{
+    display: flex;
+    justify-content: space-between;
+}
+.cardfoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardfoto p{
+    line-height: 0px;
+    font-size: 20px;
+}
+.cardfoto img{
+    width: 300px;
+    border-radius: 50%;
+    border: #f9a1b5 solid 5px;
+    margin: 5px;
+
+}
+@media (max-width: 800px) {
+    #fotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#filtros {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #filtros label {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #fbb;
+  }
+  
+  #filtros button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #fbb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #filtros button:hover {
+    background-color: #eaa;
+  }
+  
+  /* Produtos */
+  #produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Produto individual */
+  .produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .produto img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+  
+  .produto h4 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .produto p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .produto .preco {
+    font-size: 1.2rem;
+    color: #fbb;
+    font-weight: bold;
+  }
+  
+  .produto .botoes {
+    margin-top: 10px;
+  }
+  
+  .produto button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #fbb;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .produto button:hover {
+    background-color: #fbb;
+  }
+  #botoes{
+    text-align: center;
+  }
+  #salvar{
+    color: black;
+  }
+  #cancelar{
+    color: black;
+  }
