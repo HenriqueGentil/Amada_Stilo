@@ -1,0 +1,43 @@
+@media screen and (max-width: 990px){
+    header{
+        flex-direction:column;
+}
+main{
+    flex-direction: column;
+}
+h2{
+    font-size: 38px;
+}
+form{
+    margin: 0 auto;
+    width: 100px;
+}
+input{
+    align-self: center;
+    width: 40vw;
+}
+    #btnenviar{
+        width: 20vw;
+    }
+
+article{
+    width: 100%;
+    display: flex;
+}
+img{
+    margin: 0 auto;
+}
+#title{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#texttitle{
+    flex-direction: column;
+    line-height: 10px;
+}
+#title img{
+    height: 100%;
+    width: 100%;
+}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amada 'Stilo</title>
+
+    <link rel="icon" type="image/jpeg" href="Amada.jpeg">
+    <link href="designer.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="Amada.jpeg" alt="Amada">
+            <div id="texttitle">
+                <h1>Amada</h1>
+                <h1>'Stilo</h1>
+            </div>
+            
+        </div>
+        <ul>
+            <a href="inicial.html"><li>Inicio</li></a>
+            <a href="Sobre.html"><li>Sobre</li></a>
+            <a href="contato.html"><li>Contato</li></a>
+            <a href="Loja.html"><li>Loja</li></a>
+            <a href="inicial.html" id="inscreva-se-btn"><li>Tela Inicial</li></a>
+        </ul>
+    </header>
+    <main>
+        <style>
+            .mensagem-erro {
+                color: red;
+            }
+    
+            .mensagem-sucesso {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+    
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento"><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+    
+            <label for="senha">Senha:</label>
+            <div>
+                <input type="password" id="senha" name="senha">
+                <button type="button" id="toggleSenha">👁️</button>
+            </div>
+            <small><br>A senha deve conter: 1 letra maiúscula, 1 símbolo e 1 número.</small><br>
+    
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <div>
+                <input type="password" id="confirmar-senha" name="confirmar-senha">
+                <button type="button" id="toggleConfirmarSenha">👁️</button>
+            </div>
+    
+            <button type="submit">Cadastrar</button>
+            <button type="button" id="limparFormulario">Limpar</button>
+            <p id="mensagem"></p>
+        </form>
+    
+    <script src="conta.js"></script>
+</body>
+</html>
