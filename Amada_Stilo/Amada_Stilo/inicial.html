@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amada 'Stilo</title>
+
+    <link rel="icon" type="image/jpeg" href="Assets/Imagens/Amada.jpeg">
+    <link href="Assets/CSS/designer.css" rel="stylesheet">
+    <link href="Assets/CSS/fonts.css" rel="stylesheet">
+    <link href="Assets/CSS/media.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="Assets/Imagens/Amada.jpeg" alt="Amada">
+            <div id="texttitle">
+                <h1>Amada</h1>
+                <h1>'Stilo</h1>
+            </div>
+            
+        </div>
+        <ul>
+            <a href="inicial.html"><li>Inicio</li></a>
+            <a href="Sobre.html"><li>Sobre</li></a>
+            <a href="contato.html"><li>Contato</li></a>
+            <a href="Loja.html"><li>Loja</li></a>
+            <a href="cadastro.html" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <style>
+            .mensagem-erro {
+                color: red;
+            }
+
+            .mensagem-sucesso {
+                color: green;
+            }
+        </style>
+        <aside>
+            <h2><span>Inscreva-se agora</span></h2>
+            <h2>para acompanhar as </h2>
+            <h2>últimas atualizações</h2>
+            <h2>do catálogo</h2>
+            <p>A melhor loja católica virtual de vendas, agora na palma da sua mão. Veja as novas camisas e os melhores acessórios disponíveis em nossa loja.</p>
+
+            <h3>Login</h3>
+            <form action="login-cliente.php" method="post" id="formLogin">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="email" name="senha" id="senha" placeholder="Senha">
+                <input id="btnenviar" type="submit" value="Enviar >" a href="Loja.html" id="inscreva-se-btn">
+                <span id="mensagem"></span>
+            </form>
+            </aside>
+
+            <article>
+                <img src="Assets/Imagens/Amada.jpeg" alt="Amada 'Stilos">
+            </article>
+        </main>
+
+        <script src="Assets/JS/login.js"></script>
+    </body>
+</html>
