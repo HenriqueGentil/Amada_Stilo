@@ -28,3 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+document.getElementById('logout').addEventListener('click', function () {
+    fetch('sair.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'sucesso') {
+                window.location.href = "inicial.html"; // Redireciona para o login
+            }
+        });
+});

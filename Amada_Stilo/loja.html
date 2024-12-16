@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amada Stilo</title>
+
+    <link rel="stylesheet" href="Assets/CSS/designer.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="Assets/Imagens/Amada.jpeg" alt="Amada">
+            <h1>Amada 'Stilo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicial.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
+                <li><a href="">Loja</a></li>
+                <li><a href="carrinho.html" id="carrinho-icon">Carrinho (<span id="item-count">0</span>)</a></li>
+                <li><a id="btnPerfil" href="perfil.php"> Meu Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <style>
+            #biblia1, #terco1, #crucifixo1, #biblia2, #terco2, #crucifixo2 {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Ajusta a imagem sem distorção */
+            display: block;
+            margin: 0 auto;
+        }
+        </style>
+        <aside>
+            <h2>Menu</h2>
+            <select id="category-menu">
+                <option value="all">Todos os Produtos</option>
+                <option value="biblia">Bíblias</option>
+                <option value="terco">Terços</option>
+                <option value="crucifixo">Crucifixos</option>
+            </select>
+        </aside>
+
+        <section id="product-grid">
+            <div class="product" data-category="biblia">
+                <img src="Assets/Imagens/Biblia Ave Maria Eis o Cordeiro Vermelho.jpg" alt="Bíblia 1" style="height: 10%; width: 10%;">
+                <h3>Bíblia Sagrada-Eis o Cordeiro</h3>
+                <p>Palavra de Deus para auxilio na fé</p>
+                <p class="price">R$ 99,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-category="terco" >
+                <img src="Assets/Imagens/Terço Jovem Misericordioso Madeira.jpg" alt="Terço 1" style="height: 10%; width: 10%;">
+                <h3>Terço de Madeira-Jesus Misericordioso</h3>
+                <p>Terço de oração para auxilio da fé.</p>
+                <p class="price">R$ 25,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-category="crucifixo" >
+                <img src="Assets/Imagens/png-transparent-crucifix-on-blue-background-crucifix-wall-cross-christianity-jesus-king-of-the-jews-christian-cross-cross-religion-christian-cross-png-thumbnail.png" alt="Crucifixo 1" style="height: 10%; width: 10%;">
+                <h3>Crucifixo de Parede</h3>
+                <p>Crucifixo para ajudar na oração</p>
+                <p class="price">R$ 40,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Mais produtos -->
+            <div class="product" data-category="biblia" >
+                <img src="Assets/Imagens/Biblia Jovem.jpg" alt="Bíblia 2" style="height: 10%; width: 10%;">
+                <h3>Bíblia de Estudo Jovem</h3>
+                <p>Biblia de estudo para o jovem católico</p>
+                <p class="price">R$ 75,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-category="terco">
+                <img src="Assets/Imagens/Terço Santa Teresinha Perfumado.jpeg" alt="Terço 2" style="height: 10%; width: 10%;">
+                <h3>Terço de Santa Teresinha Perfumado</h3>
+                <p>Um terço para se sentir mais perto do céu.</p>
+                <p class="price">R$ 30,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product" data-category="crucifixo">
+                <img src="Assets/Imagens/Pulseira Terço São José.png" alt="Crucifixo 2" style="height: 10%; width: 10%;">
+                <h3>Pulseira Terço São José</h3>
+                <p>Por meio do terço pulseira de São José, reze m qualquer lugar.</p>
+                <p class="price">R$ 35,00</p>
+                <button class="add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <div id="cart-modal" class="hidden">
+            <h3>Seu Carrinho</h3>
+            <div id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            <button id="finalize-purchase">Finalizar Compra</button>
+            <button id="close-cart">Fechar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Amada Stilo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
